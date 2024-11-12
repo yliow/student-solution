@@ -20,6 +20,40 @@ For the question you are working on, imitate the above example,
 replacing John Doe with your name and datetime with the date and time
 you are done.
 
+To include your exercise, start by placing it in the
+\verb!exercises! directory. For example, if your exercise
+directory is named \verb!tree-6!, you should see the
+following output when running \verb!ls! inside the
+\verb!exercises! directory:
+
+\begin{Verbatim}[frame=single, fontsize=\small]
+runtime-of-sum-of-squares  tree-6
+\end{Verbatim}
+
+Next, to display the exercise in this document, from the main directory open:
+\[
+\verb!algorithm-analysis-how-fast-is-an-algorithm.tex!
+\]
+then locate the placeholder:
+\[
+\verb!%???%!
+\]
+and replace it with:
+
+\[
+\verb!\input{exercises/tree-6/main.tex}!
+\]
+
+%???%
+
+Now, go back to the main directory and run the \verb!make! command.
+This should compile the document with your exercise included.
+
+To add your answer, navigate to the directory of your exercise and
+enter your solution in the file named \verb!answer.tex!. Return to
+the main directory, run \verb!make! again, and your solution should
+appear on the following pages of this document.
+
 To properly generate the table of contents you'll need to run make twice.
 If you see some errors involving missing python code, let me know.
 

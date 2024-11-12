@@ -1,2 +1,2 @@
 \contentsline {chapter}{\numberline {102}Asymptotics and algorithmic runtime analysis}{4000}{chapter.102}% 
-\contentsline {section}{\numberline {102.1}Algorithmic analysis: how fast is an algorithm? \textnormal {\relax \fontsize {6}{7}\selectfont {\textnormal {debug: algorithm-analysis-how-fast-is-an-algorithm.tex}}}}{4002}{section.102.1}% 
+\contentsline {section}{\numberline {102.1}Algorithmic analysis: how fast is an algorithm? \textnormal {\relax \fontsize {6}{7}\selectfont {\textnormal {debug: algorithm-analysis-how-fast-is-an-algorithm.tex}}}}{4003}{section.102.1}% 
