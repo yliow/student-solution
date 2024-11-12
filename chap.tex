@@ -1,0 +1,47 @@
+%-*-latex-*-
+\mychapter{101}{4000}{Asymptotics and algorithmic runtime analysis}
+
+Open \verb!algorithm-analysis-how-fast-is-an-algorithm.tex!
+and you'll see
+\[
+\verb!\input{exercises/runtime-of-sum-of-squares/main.tex}!
+\]
+Goto \verb!exercises/runtime-of-sum-of-squares/! and in that directory you'll
+see \verb!question.tex! and \verb!answer.tex!.
+\verb!question.tex! contains the question
+and
+\verb!answer.tex! contains the answer.
+Near the top of \verb!answer.tex!, you'll see
+\[
+\textsc{Author: John Doe. Datetime: 2024-11-12 09:00:00}
+\]
+
+For the question you are working on, imitate the above example,
+replacing John Doe with your name and datetime with the date and time
+you are done.
+
+To properly generate the table of contents you'll need to run make twice.
+If you see some errors involving missing python code, let me know.
+
+Once you are done, send me the directory of the exercise, tar'd and gzipped.
+It should be a directory with \verb!main.tex!, \verb!question.tex! and
+\verb!answer.tex!.
+Retain the original directory name. 
+For instance it might be
+\[
+\verb!runtime-of-sum-of-squares.tar.gz!
+\]
+You'll also need to tell me chapter and course.
+
+\newpage\input{algorithm-analysis-how-fast-is-an-algorithm.tex}
+
+\begin{python0}
+from solutions import *
+prepare_solutions()
+\end{python0}
+\input{solutions.tex}
+\begin{python0}
+from solutions import *
+clear()
+\end{python0}
+

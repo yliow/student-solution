@@ -1,0 +1,40 @@
+%-*-latex-*-
+\tinysidebar{\debug{exercises/runtime-of-sum-of-squares/answer.tex}}
+
+\textsc{Author: John Doe. Datetime: 2024-11-12 09:00:00}
+
+(a) The following gives the number of times each statement is executed
+in terms of $n$:
+\begin{Verbatim}[frame=single, fontsize=\small]
+                             time    number of times 
+         i = 1               t1      1
+         s = 0               t2      1
+LOOP:    if i > n:           t3      n + 1
+             goto ENDLOOP    t4      1
+         term = i * i        t5      n
+         s = s + term        t6      n
+         i = i + 1           t7      n
+         goto LOOP           t8      n
+ENDLOOP:
+\end{Verbatim}
+Therefore the runtime $T(n)$ is
+\[
+T(n) = (t_3 + t_5 + t_6 + t_7 + t_8)n + (t_1 + t_2 + t_3 + t_4)
+\]
+
+(b)
+\[
+T(n) = An + B
+\]
+where $A, B$ are constants.
+
+(c)
+\[
+T(n) = O(n)
+\]
+
+(d)
+\[
+\mathsc{Space}(n) = O(1)
+\]
+\qed
